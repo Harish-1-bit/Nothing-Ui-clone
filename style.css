@@ -359,6 +359,9 @@ nav{
            }
        } 
          }
+#red{
+            width: 240px;
+         }
 @media (max-width:375px) {
     body{
         width: 100%;
