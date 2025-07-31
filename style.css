@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .bx{
     display: flex;
     align-items: center;
@@ -17,24 +18,25 @@
     background-size: cover;
 }
 nav{
+    margin-top: 20px;
     gap: 25%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
     z-index: 20;
-width: 480px;
-height:50px;
-background-color: #CCCCCC;
-p{
-    letter-spacing: -1px;
-    color:rgb(26, 25, 25) ;
-    font-size:20px;
-    font-family: "Bitcount Prop Single", system-ui;
-}
-svg{
-    color: rgb(95, 95, 95);
-}
+    width: 480px;
+    padding-block: 10px;
+    background-color: #CCCCCC;
+    p{
+        letter-spacing: -1px;
+        color:rgb(26, 25, 25) ;
+        font-size:20px;
+        font-family: "Bitcount Prop Single", system-ui;
+    }
+    svg{
+        color: rgb(95, 95, 95);
+    }
 }
 
 .face{
@@ -43,10 +45,10 @@ svg{
     position: relative; right: 19.8vw; top: 35.5vh;
     p{
         padding-left: 14px;
-         color: white;
-         letter-spacing: -1px;
+        color: white;
+        letter-spacing: -1px;
         font-family: "Merriweather", serif;
-    
+        
     }
 }
 .calender{
@@ -89,54 +91,54 @@ svg{
     justify-content: center;
     align-items: center;
     gap: 20px;
-        div:nth-child(1){
+    div:nth-child(1){
+        position: relative;
+        right: 20px;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        p:nth-child(1){
+            color: white;
+            font-family: "PT Serif", serif;
+            font-size: 1.5rem;
+        }
+        p:nth-child(2){
+            color: white;
+            font-family: "Bitcount Prop Single", system-ui;
+            font-size: 1.2rem;
+        }
+    }
+    div:nth-child(2){
+        padding-left: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        width: 30%;
+        img{
+            width: 175px;
+            height: 170px;
+        }
+        button{
+            padding-top: 20px;
             position: relative;
-            right: 20px;
-            width: 50%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            gap: 20px;
-                p:nth-child(1){
-                    color: white;
-                    font-family: "PT Serif", serif;
-                    font-size: 1.5rem;
-                }
-                p:nth-child(2){
-                    color: white;
-                    font-family: "Bitcount Prop Single", system-ui;
-                    font-size: 1.2rem;
-                }
+            bottom: 30px;
+            left: 30px;
+            font-family: "Merriweather", serif;
+            font-size: 0.7rem;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            width: 60px;
+            height: 1000px;                
+            padding: 0px 10px;
+            background-color: #6A6B6C;
         }
-        div:nth-child(2){
-            padding-left: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 90%;
-            width: 30%;
-            img{
-                width: 175px;
-                height: 170px;
-            }
-            button{
-                padding-top: 20px;
-                position: relative;
-                bottom: 30px;
-                left: 30px;
-                font-family: "Merriweather", serif;
-                font-size: 0.7rem;
-                color: white;
-                border: none;
-                border-radius: 10px;
-                width: 60px;
-                height: 1000px;                
-                padding: 0px 10px;
-                background-color: #6A6B6C;
-            }
-        }
+    }
     
 }
 .bx2{
@@ -148,14 +150,14 @@ svg{
     background-size: cover;
     .main-box{
         margin-bottom: 18px;
-    border-radius: 10px;
-    height: 200px;
-    width: 480px;
-    background-color: #E6E7E8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+        border-radius: 10px;
+        height: 200px;
+        width: 480px;
+        background-color: #E6E7E8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         div:nth-child(1){
             position: relative;
             right: 20px;
@@ -163,19 +165,19 @@ svg{
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             gap: 20px;
-                p:nth-child(1){
-                    color: rgb(0, 0, 0);
-                    font-family: "PT Serif", serif;
-                    font-size: 1.5rem;
-                }
-                p:nth-child(2){
-                    color: rgb(0, 0, 0);
+            justify-content: space-around;
+            p:nth-child(1){
+                color: rgb(0, 0, 0);
+                font-family: "PT Serif", serif;
+                font-size: 1.5rem;
+            }
+            p:nth-child(2){
+                color: rgb(0, 0, 0);
                     font-family: "Bitcount Prop Single", system-ui;
                     font-size: 1.2rem;
                 }
-        }
+            }
         }
     }
     .bx3{
@@ -184,11 +186,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #696C6D;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #696C6D;
+            margin-bottom: 18px;
+        }
     }
     .bx4{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/782119ca69d9de82ab61a3480d4126c11bd95253-4096x2304.jpg?auto=format");
@@ -196,11 +198,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #F8FAFA;
-        margin-bottom: 18px; 
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #F8FAFA;
+            margin-bottom: 18px; 
+        }
     }
     .bx5{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/3c753d75076a8357eb7b1dd4e6e2f3e62a43ac33-4096x2304.jpg?auto=format");
@@ -208,11 +210,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #696C6D;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #696C6D;
+            margin-bottom: 18px;
+        }
     }
     .bx6{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/cc924bebbeb2ae69b15662b1723ae932edddcf59-4096x2304.jpg?auto=format");
@@ -220,11 +222,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #EEDED9;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #EEDED9;
+            margin-bottom: 18px;
+        }
     }
     .bx7{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/4d8dcb740d2bc5bbf26ae571b4bfdfe5a4e8f93d-4096x2304.jpg?auto=format");
@@ -232,11 +234,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #69645f;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #69645f;
+            margin-bottom: 18px;
+        }
     }
     .bx8{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/2ce8af7631906a8cdb7d9472c0cb7771d26df70f-4096x2304.jpg?auto=format");
@@ -244,11 +246,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #D0D0D0;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #D0D0D0;
+            margin-bottom: 18px;
+        }
     }
     .bx9{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/441eecd4927820187f76fb7e46da13b6338d56de-4096x2304.jpg?auto=format");
@@ -256,11 +258,12 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #DDD6D5;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #DDD6D5;
+            margin-bottom: 18px;
+            
+        }
     }
     .bx10{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/ae21c5281dbf28a7609b404ec8f2090f9180b600-4096x2304.jpg?auto=format");
@@ -268,11 +271,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #69645f;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #69645f;
+            margin-bottom: 18px;
+        }
     }
     .bx11{
         background-image: url("https://cdn.sanity.io/images/gtd4w1cq/production/f57615e00bd85848d5f094452a32d9b72a21e9f3-4096x2304.jpg?auto=format");
@@ -280,11 +283,11 @@ svg{
         background-size: cover;
         height: 100vh;
         justify-content: center;
-    display: flex;align-items: flex-end;
-    .main-box{
-        background-color: #D5D4D4;
-        margin-bottom: 18px;
-    }
+        display: flex;align-items: flex-end;
+        .main-box{
+            background-color: #D5D4D4;
+            margin-bottom: 18px;
+        }
     }
     footer{
         height: 115vh;
@@ -294,25 +297,25 @@ svg{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-            .footer-details{
-                padding: 100px;
-                height: 50%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly;
-                p{
-                    font-size: 3rem;
-                    background-color: none;
-                    font-family: "Bitcount Prop Single", system-ui;
-                    color: white;
-                }
+        .footer-details{
+            padding: 100px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            p{
+                font-size: 3rem;
+                background-color: none;
+                font-family: "Bitcount Prop Single", system-ui;
+                color: white;
             }
-         .footer-details2{
+        }
+        .footer-details2{
         display: flex;
         height: 45%;
-        width: 100vw;
+        width: 100%;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -358,7 +361,7 @@ svg{
          }
 @media (max-width:375px) {
     body{
-        width: 110%;
+        width: 100%;
     }
     nav{
         height: 10px;
@@ -377,10 +380,7 @@ svg{
     .main-box{
         height: 30%;
     }
-    #phoneimg{
-        height: 50%;
-        width: 30%;
-    }
+    
     footer{
         height: 90px;
     }
@@ -390,11 +390,27 @@ svg{
         
         font-size: 1rem;
     }
+    #red{
+        
+        width: 880px;
+        
+        
+    }
+    #bx5-img{
+        width: 150px;
+    }
+    #bx4-img{
+        width: 150px;
+    }
+    #bx3-img, #bx2-img, #bx1-img{
+        width: 150px;
+    }
+    
 }
 
 @media (max-width:770px) {
     body{
-        width: 105%;
+        width: 100%;
     }
     
     .bx{
@@ -475,6 +491,28 @@ svg{
     #box2main{
         width: 80%;
         height: 20;
+    }
+    .foot2{
+        margin-bottom: 30px;
+        
+    }
+    #red{
+        width: 100%;
+    }
+    #red{
+        
+        width:150px;
+        object-fit: cover;
+        
+    }
+    #bx5-img{
+        width: 150px;
+    }
+    #bx4-img{
+        width: 150px;
+    }
+    #bx3-img, #bx2-img, #bx1-img{
+        width: 150px;
     }
 }
 
